@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Game of Twelve | Legal</title>
+  <meta name="description" content="Legal information for The Game of Twelve® companion app.">
+  <title>The Game of Twelve® | Legal Information</title>
   <style>
-    body {
-      background: #002454;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 80px 24px;
-    }
-    h1 {
-      color: #FFCD00;
-      font-size: 32px;
-    }
-    p {
-      line-height: 1.6;
-    }
+    :root{color-scheme:dark;--navy:#002454;--gold:#ffcd00;--white:#fff;--muted:#c6d1e4}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    main{width:min(100%,750px);margin:auto;padding:4rem 1.4rem;text-align:center}
+    h1{color:var(--gold);font-size:clamp(2rem,5vw,3rem);line-height:1.25}
+    h2{font-size:1.2rem;font-weight:normal}
+    p{color:var(--muted)}
+    nav{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin:2rem 0}
+    a{color:var(--gold);text-underline-offset:3px}
+    nav a{display:inline-block;border:1px solid var(--gold);padding:.8rem 1.2rem;border-radius:6px;text-decoration:none}
+    a:focus-visible{outline:3px solid var(--white);outline-offset:4px}
+    footer{padding:1.4rem;text-align:center;border-top:1px solid #456391}
+    .small{font-size:.88rem}
   </style>
 </head>
 <body>
-  <h1>The Game of Twelve</h1>
-  <h2>Legal Information</h2>
-  <p>Official legal information for The Game of Twelve.</p>
-  <p>Our legal documents are being prepared for publication.</p>
+  <main>
+    <h1>The Game of Twelve®</h1>
+    <h2>Legal Information</h2>
+    <p>Information about the Twelve companion application and its private beta.</p>
+    <nav aria-label="Legal documents">
+      <a href="./privacy/">Privacy Policy</a>
+      <a href="./terms/">Terms &amp; Conditions</a>
+    </nav>
+    <p class="small">Draft documents for review. Publication is subject to final approval.</p>
+  </main>
+  <footer><a href="mailto:thegameoftwelve@gmail.com">thegameoftwelve@gmail.com</a></footer>
 </body>
 </html>
